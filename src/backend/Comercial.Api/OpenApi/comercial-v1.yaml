@@ -1,0 +1,89 @@
+openapi: 3.0.3
+info:
+  title: Comercial Web API
+  version: 1.0.0
+  description: API ASP.NET Core sobre la base comercial existente mediante Database First.
+servers:
+  - url: http://localhost:5191
+paths:
+  /health:
+    get:
+      summary: Estado de la API
+      responses: { '200': { description: Disponible } }
+  /health/database:
+    get:
+      summary: Comprueba conexión con comercial
+      responses: { '200': { description: Base disponible }, '503': { description: Base no disponible } }
+  /api/auth/login:
+    post:
+      summary: Inicia sesión
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/Login' }
+      responses: { '200': { description: Sesión iniciada }, '401': { description: Credenciales incorrectas }, '429': { description: Demasiados intentos } }
+  /api/clientes:
+    get:
+      summary: Lista clientes
+      parameters:
+        - { name: buscar, in: query, schema: { type: string } }
+      responses: { '200': { description: Clientes } }
+    post:
+      summary: Crea un cliente
+      responses: { '201': { description: Creado }, '400': { description: Datos inválidos }, '409': { description: Duplicado } }
+  /api/clientes/{cedula}:
+    get:
+      summary: Obtiene un cliente
+      parameters: [ { name: cedula, in: path, required: true, schema: { type: string } } ]
+      responses: { '200': { description: Cliente }, '404': { description: No encontrado } }
+    put:
+      summary: Actualiza un cliente
+      parameters: [ { name: cedula, in: path, required: true, schema: { type: string } } ]
+      responses: { '204': { description: Actualizado } }
+    delete:
+      summary: Anula un cliente
+      parameters: [ { name: cedula, in: path, required: true, schema: { type: string } } ]
+      responses: { '204': { description: Anulado } }
+  /api/documentos/facturas:
+    post:
+      summary: Crea factura con detalles y mensualidades
+      responses: { '201': { description: Factura creada }, '400': { description: Validación }, '409': { description: Conflicto de mensualidad } }
+  /api/documentos/facturas/{numero}:
+    get:
+      summary: Consulta factura y detalles
+      parameters: [ { name: numero, in: path, required: true, schema: { type: integer } } ]
+      responses: { '200': { description: Factura }, '404': { description: No encontrada } }
+  /api/documentos/facturas/{numero}/imprimir:
+    get:
+      summary: Vista imprimible de factura
+      parameters: [ { name: numero, in: path, required: true, schema: { type: integer } } ]
+      responses: { '200': { description: HTML imprimible } }
+  /api/documentos/compras:
+    post:
+      summary: Crea compra con detalles
+      responses: { '201': { description: Compra creada }, '400': { description: Validación } }
+  /api/consultas/pagos:
+    get:
+      summary: Consulta pagos registrados por facturas
+      parameters:
+        - { name: cedula, in: query, schema: { type: string } }
+        - { name: desde, in: query, schema: { type: string, format: date } }
+        - { name: hasta, in: query, schema: { type: string, format: date } }
+      responses: { '200': { description: Resultados } }
+  /api/consultas/mensualidades-pendientes:
+    get:
+      summary: Consulta cartera pendiente
+      responses: { '200': { description: Mensualidades pendientes } }
+  /api/consultas/inventario:
+    get:
+      summary: Consulta último saldo por producto
+      responses: { '200': { description: Inventario } }
+components:
+  schemas:
+    Login:
+      type: object
+      required: [usuario, clave]
+      properties:
+        usuario: { type: string, maxLength: 10 }
+        clave: { type: string, format: password, maxLength: 20 }

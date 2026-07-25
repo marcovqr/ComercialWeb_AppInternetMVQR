@@ -1,0 +1,4 @@
+.invoice-actions{display:flex;gap:6px}
+.invoice-actions button{border:1px solid #cbd5e1;background:white;border-radius:6px;padding:6px 9px;cursor:pointer}
+.invoice-actions .danger{color:#b42318;border-color:#f1b5af}
+.invoice-actions button:disabled{opacity:.45;cursor:not-allowed}

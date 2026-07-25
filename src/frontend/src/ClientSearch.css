@@ -1,0 +1,6 @@
+.client-results{display:grid;gap:6px;margin:10px 0;max-height:220px;overflow:auto}
+.client-results button{display:grid;text-align:left;gap:3px;border:1px solid #d7deea;background:#fff;border-radius:8px;padding:10px 12px;cursor:pointer}
+.client-results button:hover{border-color:#176bdf;background:#f4f8ff}
+.client-results span{color:#65738c;font-size:12px}
+.form-info{color:#176bdf}
+.monthly-list{display:grid;gap:8px;margin:10px 0 18px}.monthly-list label{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:12px;border:1px solid #d7deea;border-radius:9px;padding:12px;background:#fff;cursor:pointer}.monthly-list label:hover{border-color:#176bdf;background:#f4f8ff}.monthly-list input{width:18px;height:18px}.monthly-list span{display:grid;gap:3px}.monthly-list small{color:#65738c}.monthly-list b{font-size:16px}

@@ -5,3 +5,17 @@
 /.vs
 /publish/ComercialWeb/work
 /src/backend/Comercial.Api/work
+
+# .NET
+**/bin/
+**/obj/
+
+# Frontend
+**/node_modules/
+**/dist/
+
+# Herramientas y cachés locales
+/.appdata/
+/.dotnet-home/
+/.npm-cache/
+/.tools/

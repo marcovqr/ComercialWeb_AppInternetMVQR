@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.1"><PrivateAssets>all</PrivateAssets></PackageReference>
+    <ProjectReference Include="..\Comercial.Application\Comercial.Application.csproj" />
+    <ProjectReference Include="..\Comercial.Infrastructure\Comercial.Infrastructure.csproj" />
+    <ReactSourceFiles Include="..\..\frontend\src\**\*;..\..\frontend\public\**\*;..\..\frontend\package.json;..\..\frontend\package-lock.json;..\..\frontend\vite.config.ts;..\..\frontend\index.html" />
+  </ItemGroup>
+
+  <Target Name="BuildReactForVisualStudio" BeforeTargets="Build"
+          Condition="'$(Configuration)' == 'Debug' and Exists('..\..\frontend\node_modules')"
+          Inputs="@(ReactSourceFiles)"
+          Outputs="wwwroot\.react-build-stamp">
+    <Exec Command="npm run build" WorkingDirectory="..\..\frontend" />
+    <RemoveDir Directories="wwwroot" />
+    <MakeDir Directories="wwwroot" />
+    <ItemGroup>
+      <ReactDistFiles Include="..\..\frontend\dist\**\*" />
+    </ItemGroup>
+    <Copy SourceFiles="@(ReactDistFiles)"
+          DestinationFiles="@(ReactDistFiles->'wwwroot\%(RecursiveDir)%(Filename)%(Extension)')" />
+    <Touch Files="wwwroot\.react-build-stamp" AlwaysCreate="true" />
+  </Target>
+
+</Project>
