@@ -1,12 +1,15 @@
+/* oxlint-disable react-hooks/exhaustive-deps -- Module data reloads only when the active module or authenticated user changes. */
 import {useEffect,useState} from 'react';
 import type {FormEvent} from 'react';
 import DataTable from 'datatables.net-react';
 import DT from 'datatables.net-dt';
 import 'datatables.net-dt/css/dataTables.dataTables.css';
 import './App.css';
+import './Login.css';
 import DocumentForm from './DocumentForm';
 import PaymentsView from './PaymentsView';
 import MonthlyGenerator from './MonthlyGenerator';
+// oxlint-disable-next-line react-hooks/rules-of-hooks -- DataTables plugin registration, not a React Hook.
 DataTable.use(DT);
 type Row=Record<string,string|number>; type Field={name:string;label:string;type?:string;required?:boolean}; type Config={base:string;id:string;fields:Field[]};
 const api=import.meta.env.VITE_API_URL??'';

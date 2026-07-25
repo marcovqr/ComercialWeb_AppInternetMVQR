@@ -165,14 +165,16 @@ public partial class ScaffoldedComercialContext : DbContext
 
         modelBuilder.Entity<factura_det>(entity =>
         {
-            entity.HasKey(e => new { e.fac_numero, e.pro_codigo }).HasName("PK__factura___D6022E5A6C12FEE2");
+            entity.HasKey(e => e.fac_detalle_id).HasName("PK_factura_det");
 
             entity.ToTable("factura_det");
 
             entity.Property(e => e.fac_cantidad).HasColumnType("decimal(15, 4)");
+            entity.Property(e => e.fac_desde).HasColumnType("date");
             entity.Property(e => e.fac_estado)
                 .HasMaxLength(80)
                 .IsUnicode(false);
+            entity.Property(e => e.fac_hasta).HasColumnType("date");
             entity.Property(e => e.fac_precio).HasColumnType("decimal(15, 4)");
 
             entity.HasOne(d => d.fac_numeroNavigation).WithMany(p => p.factura_dets)

@@ -2,6 +2,7 @@ import {useState} from 'react';
 import DataTable from 'datatables.net-react';
 import DT from 'datatables.net-dt';
 import './PaymentsView.css';
+// oxlint-disable-next-line react-hooks/rules-of-hooks -- DataTables plugin registration, not a React Hook.
 DataTable.use(DT);
 type Payment={fechaPago:string;factura:number;cedula:string;cliente:string;subtotal?:number;descuento?:number;impuesto?:number;total:number;estado:string;mensualidades:number};
 const api=import.meta.env.VITE_API_URL??'';

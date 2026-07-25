@@ -7,6 +7,42 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{827E0CD3-B72
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "backend", "backend", "{FE360695-3F2B-1049-3887-35FBB5135923}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "frontend", "frontend", "{D46F6D9B-D486-42F8-9648-090A885415F9}"
+	ProjectSection(SolutionItems) = preProject
+		src\frontend\.env.example = src\frontend\.env.example
+		src\frontend\.oxlintrc.json = src\frontend\.oxlintrc.json
+		src\frontend\index.html = src\frontend\index.html
+		src\frontend\package-lock.json = src\frontend\package-lock.json
+		src\frontend\package.json = src\frontend\package.json
+		src\frontend\tsconfig.app.json = src\frontend\tsconfig.app.json
+		src\frontend\tsconfig.json = src\frontend\tsconfig.json
+		src\frontend\tsconfig.node.json = src\frontend\tsconfig.node.json
+		src\frontend\vite.config.ts = src\frontend\vite.config.ts
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Vistas React", "Vistas React", "{5311CC31-B621-4A74-9445-91C26370F950}"
+	ProjectSection(SolutionItems) = preProject
+		src\frontend\src\App.css = src\frontend\src\App.css
+		src\frontend\src\App.tsx = src\frontend\src\App.tsx
+		src\frontend\src\ClientSearch.css = src\frontend\src\ClientSearch.css
+		src\frontend\src\DocumentForm.css = src\frontend\src\DocumentForm.css
+		src\frontend\src\DocumentForm.tsx = src\frontend\src\DocumentForm.tsx
+		src\frontend\src\index.css = src\frontend\src\index.css
+		src\frontend\src\InvoiceActions.css = src\frontend\src\InvoiceActions.css
+		src\frontend\src\Login.css = src\frontend\src\Login.css
+		src\frontend\src\main.tsx = src\frontend\src\main.tsx
+		src\frontend\src\MonthlyGenerator.css = src\frontend\src\MonthlyGenerator.css
+		src\frontend\src\MonthlyGenerator.tsx = src\frontend\src\MonthlyGenerator.tsx
+		src\frontend\src\PaymentsView.css = src\frontend\src\PaymentsView.css
+		src\frontend\src\PaymentsView.tsx = src\frontend\src\PaymentsView.tsx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Recursos públicos", "Recursos públicos", "{C12D4A1C-BFB8-4A38-80D7-49F05B78EFE7}"
+	ProjectSection(SolutionItems) = preProject
+		src\frontend\public\favicon.svg = src\frontend\public\favicon.svg
+		src\frontend\public\icons.svg = src\frontend\public\icons.svg
+	EndProjectSection
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Comercial.Api", "src\backend\Comercial.Api\Comercial.Api.csproj", "{5ACE15DF-48A6-4612-8B28-3A66802347AF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Comercial.Application", "src\backend\Comercial.Application\Comercial.Application.csproj", "{A4BB623B-0C89-4A94-8A90-9DC93A12D102}"
@@ -79,6 +115,9 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{FE360695-3F2B-1049-3887-35FBB5135923} = {827E0CD3-B72D-47B6-A68D-7590B98EB39B}
+		{D46F6D9B-D486-42F8-9648-090A885415F9} = {827E0CD3-B72D-47B6-A68D-7590B98EB39B}
+		{5311CC31-B621-4A74-9445-91C26370F950} = {D46F6D9B-D486-42F8-9648-090A885415F9}
+		{C12D4A1C-BFB8-4A38-80D7-49F05B78EFE7} = {D46F6D9B-D486-42F8-9648-090A885415F9}
 		{5ACE15DF-48A6-4612-8B28-3A66802347AF} = {FE360695-3F2B-1049-3887-35FBB5135923}
 		{A4BB623B-0C89-4A94-8A90-9DC93A12D102} = {FE360695-3F2B-1049-3887-35FBB5135923}
 		{424F0E12-13C8-495C-9B9D-8B22CCDCED81} = {FE360695-3F2B-1049-3887-35FBB5135923}

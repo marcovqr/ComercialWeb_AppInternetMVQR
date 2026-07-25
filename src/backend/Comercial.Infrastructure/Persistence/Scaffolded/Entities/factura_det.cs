@@ -5,9 +5,19 @@ namespace Comercial.Infrastructure.Persistence.Scaffolded.Entities;
 
 public partial class factura_det
 {
+    public long fac_detalle_id { get; set; }
+
     public int fac_numero { get; set; }
 
+    public int? fac_linea { get; set; }
+
     public int pro_codigo { get; set; }
+
+    public int? men_codigo { get; set; }
+
+    public DateOnly? fac_desde { get; set; }
+
+    public DateOnly? fac_hasta { get; set; }
 
     public decimal fac_cantidad { get; set; }
 

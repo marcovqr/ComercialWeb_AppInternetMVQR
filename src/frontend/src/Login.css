@@ -1,0 +1,51 @@
+.shell:has(.login) {
+  grid-template-columns: 1fr;
+  place-items: center;
+  min-height: 100vh;
+  padding: 24px;
+  background: radial-gradient(circle at top, #e8f1ff 0, #f4f7fb 48%);
+}
+
+.shell:has(.login) > main {
+  width: min(100%, 520px);
+  padding: 0;
+}
+
+.shell:has(.login) .login {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 36px;
+}
+
+.login h1 {
+  margin-bottom: 24px;
+  font-size: 34px;
+}
+
+.login-form {
+  gap: 16px;
+}
+
+.login-form input,
+.login-form .primary {
+  min-height: 48px;
+}
+
+.login-form input {
+  padding: 13px 14px;
+}
+
+.login-form .primary {
+  font-weight: 700;
+}
+
+@media (max-width: 560px) {
+  .shell:has(.login) {
+    padding: 16px;
+  }
+
+  .shell:has(.login) .login {
+    padding: 28px 22px;
+  }
+}

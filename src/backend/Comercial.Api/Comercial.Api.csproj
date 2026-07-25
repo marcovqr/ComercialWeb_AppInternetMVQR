@@ -4,6 +4,9 @@
     <TargetFramework>net9.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>ComercialWeb-AppInternetMVQR</UserSecretsId>
+    <NpmCommand Condition="'$(NpmCommand)' == '' and Exists('C:\Program Files\nodejs\node.exe') and Exists('C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js')">&quot;C:\Program Files\nodejs\node.exe&quot; &quot;C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js&quot;</NpmCommand>
+    <NpmCommand Condition="'$(NpmCommand)' == ''">npm</NpmCommand>
   </PropertyGroup>
 
   <ItemGroup>
@@ -17,7 +20,9 @@
           Condition="'$(Configuration)' == 'Debug' and Exists('..\..\frontend\node_modules')"
           Inputs="@(ReactSourceFiles)"
           Outputs="wwwroot\.react-build-stamp">
-    <Exec Command="npm run build" WorkingDirectory="..\..\frontend" />
+    <Exec Command="$(NpmCommand) run build"
+          WorkingDirectory="..\..\frontend"
+          EnvironmentVariables="PATH=C:\Program Files\nodejs" />
     <RemoveDir Directories="wwwroot" />
     <MakeDir Directories="wwwroot" />
     <ItemGroup>
