@@ -1,0 +1,311 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\marco.quito\\source\\repos\\marcovqr\\ComercialWeb_AppInternetMVQR\\src\\backend\\Comercial.Api\\Comercial.Api.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\marco.quito\\source\\repos\\marcovqr\\ComercialWeb_AppInternetMVQR\\src\\backend\\Comercial.Api\\Comercial.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\marco.quito\\source\\repos\\marcovqr\\ComercialWeb_AppInternetMVQR\\src\\backend\\Comercial.Api\\Comercial.Api.csproj",
+        "projectName": "Comercial.Api",
+        "projectPath": "C:\\Users\\marco.quito\\source\\repos\\marcovqr\\ComercialWeb_AppInternetMVQR\\src\\backend\\Comercial.Api\\Comercial.Api.csproj",
+        "packagesPath": "C:\\Users\\marco.quito\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\marco.quito\\source\\repos\\marcovqr\\ComercialWeb_AppInternetMVQR\\src\\backend\\Comercial.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\marco.quito\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\marco.quito\\source\\repos\\marcovqr\\ComercialWeb_AppInternetMVQR\\src\\backend\\Comercial.Application\\Comercial.Application.csproj": {
+                "projectPath": "C:\\Users\\marco.quito\\source\\repos\\marcovqr\\ComercialWeb_AppInternetMVQR\\src\\backend\\Comercial.Application\\Comercial.Application.csproj"
+              },
+              "C:\\Users\\marco.quito\\source\\repos\\marcovqr\\ComercialWeb_AppInternetMVQR\\src\\backend\\Comercial.Infrastructure\\Comercial.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\marco.quito\\source\\repos\\marcovqr\\ComercialWeb_AppInternetMVQR\\src\\backend\\Comercial.Infrastructure\\Comercial.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.315/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\marco.quito\\source\\repos\\marcovqr\\ComercialWeb_AppInternetMVQR\\src\\backend\\Comercial.Application\\Comercial.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\marco.quito\\source\\repos\\marcovqr\\ComercialWeb_AppInternetMVQR\\src\\backend\\Comercial.Application\\Comercial.Application.csproj",
+        "projectName": "Comercial.Application",
+        "projectPath": "C:\\Users\\marco.quito\\source\\repos\\marcovqr\\ComercialWeb_AppInternetMVQR\\src\\backend\\Comercial.Application\\Comercial.Application.csproj",
+        "packagesPath": "C:\\Users\\marco.quito\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\marco.quito\\source\\repos\\marcovqr\\ComercialWeb_AppInternetMVQR\\src\\backend\\Comercial.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\marco.quito\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\marco.quito\\source\\repos\\marcovqr\\ComercialWeb_AppInternetMVQR\\src\\backend\\Comercial.Domain\\Comercial.Domain.csproj": {
+                "projectPath": "C:\\Users\\marco.quito\\source\\repos\\marcovqr\\ComercialWeb_AppInternetMVQR\\src\\backend\\Comercial.Domain\\Comercial.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.315/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\marco.quito\\source\\repos\\marcovqr\\ComercialWeb_AppInternetMVQR\\src\\backend\\Comercial.Domain\\Comercial.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\marco.quito\\source\\repos\\marcovqr\\ComercialWeb_AppInternetMVQR\\src\\backend\\Comercial.Domain\\Comercial.Domain.csproj",
+        "projectName": "Comercial.Domain",
+        "projectPath": "C:\\Users\\marco.quito\\source\\repos\\marcovqr\\ComercialWeb_AppInternetMVQR\\src\\backend\\Comercial.Domain\\Comercial.Domain.csproj",
+        "packagesPath": "C:\\Users\\marco.quito\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\marco.quito\\source\\repos\\marcovqr\\ComercialWeb_AppInternetMVQR\\src\\backend\\Comercial.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\marco.quito\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.315/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\marco.quito\\source\\repos\\marcovqr\\ComercialWeb_AppInternetMVQR\\src\\backend\\Comercial.Infrastructure\\Comercial.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\marco.quito\\source\\repos\\marcovqr\\ComercialWeb_AppInternetMVQR\\src\\backend\\Comercial.Infrastructure\\Comercial.Infrastructure.csproj",
+        "projectName": "Comercial.Infrastructure",
+        "projectPath": "C:\\Users\\marco.quito\\source\\repos\\marcovqr\\ComercialWeb_AppInternetMVQR\\src\\backend\\Comercial.Infrastructure\\Comercial.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\marco.quito\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\marco.quito\\source\\repos\\marcovqr\\ComercialWeb_AppInternetMVQR\\src\\backend\\Comercial.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\marco.quito\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\marco.quito\\source\\repos\\marcovqr\\ComercialWeb_AppInternetMVQR\\src\\backend\\Comercial.Application\\Comercial.Application.csproj": {
+                "projectPath": "C:\\Users\\marco.quito\\source\\repos\\marcovqr\\ComercialWeb_AppInternetMVQR\\src\\backend\\Comercial.Application\\Comercial.Application.csproj"
+              },
+              "C:\\Users\\marco.quito\\source\\repos\\marcovqr\\ComercialWeb_AppInternetMVQR\\src\\backend\\Comercial.Domain\\Comercial.Domain.csproj": {
+                "projectPath": "C:\\Users\\marco.quito\\source\\repos\\marcovqr\\ComercialWeb_AppInternetMVQR\\src\\backend\\Comercial.Domain\\Comercial.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.315/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
